@@ -1,0 +1,36 @@
+#main-header {
+    background-image: url(../img/wavegrid.png);
+}
+
+#main-content {
+    padding-top: 40px;
+    background-image: url(../img/gaming-pattern.png);
+}
+
+#main-footer {
+    background-image: url(../img/wavegrid.png);
+}
+
+#social-media-icon-container {
+    margin-top: 40px;
+}
+.social-media-icon {
+    margin-right: 20px;
+}
+
+#contact-info {
+    margin-top: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -255px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 255px; /* .push must be the same height as .footer */
+}

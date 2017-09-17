@@ -1,31 +1,74 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
 
-<!-- UIkit CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/css/uikit.min.css" />
+    <!-- jQuery is required -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<!-- jQuery is required -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
 
-<!-- UIkit JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.30/js/uikit-icons.min.js"></script>
+    <!-- w3 include -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-<!-- w3 include -->
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-
-</body>
-
-<!-- header -->
-<div w3-include-html="src/header.html"></div>
-<!-- contents -->
-<div w3-include-html="src/p1-content.html" class="p1-content"></div>
-<!-- footer -->
-<div w3-include-html="src/footer.html" class="footer"></div>
-
-<script>
-w3.includeHTML();
-</script>
-
+    <link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+    <!-- header -->
+    <header id="main-header">
+        <div id="main-header-content" class="uk-container uk-container-large">
+            <article class="uk-article">
+                <h1 class="uk-article-title">Welcome to my page!</h1>
+                <p class="uk-article-meta">It is quite empty..</p>
+            </article>
+        </div>
+    </header>
+    <div id="main-content" class="uk-container uk-container-large wrapper">
+        <div uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-body">
+                    <h3 class="uk-card-title">Large</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="uk-card uk-card-default uk-card-large uk-card-body">
+                    <h3 class="uk-card-title">Large</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of main-content -->
+    <!-- footer -->
+    <footer id="main-footer">
+        <div id="main-footer-content" class="uk-container uk-container-large footer">
+            <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                <div> <!-- contact info -->
+                    <div id="contact-info" class="uk-card uk-card-default uk-card-small uk-card-body">
+                        <h3 class="uk-card-title">Contact info</h3>
+                        <span uk-icon="icon: mail"></span>
+                        <span>metabug(at)gmail.com </span>
+                    </div>
+                </div>
+                <div> <!-- free space -->
+                </div>
+                <div id="social-media-icon-container"> <!-- social media links -->
+                    <span class="social-media-icon">
+                        <a href="https://www.linkedin.com/in/asko-lahti-5a9331a8/" class="uk-icon-button" uk-icon="icon: linkedin"></a>
+                    </span>
+                    <span class="social-media-icon">
+                        <a href="https://twitter.com/_Metabug_" class="uk-icon-button" uk-icon="icon: twitter"></a>
+                    </span>
+                    <span class="social-media-icon">
+                        <a href="https://www.facebook.com/metabug" class="uk-icon-button" uk-icon="icon: facebook"></a>
+                    </span>
+                    <span class="social-media-icon">
+                        <a href="https://www.tumblr.com/dashboard" class="uk-icon-button" uk-icon="icon: tumblr"></a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
